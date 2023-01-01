@@ -35,4 +35,4 @@ __Chirpy__ 是一个简约的、响应式的、强大的 Jekyll 主题，用于�
 
 ## 使用
 
-按照[教程](https://chirpy.cotes.page/categories/tutorial/)进行操作，您可以快速构建免费的个人博客。
+按照[教程](../categories/教程/)进行操作，您可以快速构建免费的个人博客。
