@@ -151,7 +151,7 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 ## 图片
 
-### 默认值（带标题）
+### 默认（带标题）
 
 ![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" }
 _全屏宽度且居中对齐_

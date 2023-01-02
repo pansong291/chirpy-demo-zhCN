@@ -1,7 +1,7 @@
 ---
 title: 写作语法示例
 author: paso
-date: 2019-08-08 11:33:00 +0800
+date: 2023-01-02 21:19:00 +0800
 categories: [博客, 示例]
 tags: [排版]
 math: true
