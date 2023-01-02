@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-__Chirpy__ 是一个简约的、响应式的、强大的 Jekyll 主题，用于呈现专业写作。  
+__Chirpy__ 是一个简约的、响应式的、强大的 Jekyll 主题，用于呈现专业写作。 <br>
 欢迎 [_在 GitHub 上查看_](https://github.com/cotes2020/jekyll-theme-chirpy/)。
 
 [![stargazers](https://img.shields.io/github/stars/cotes2020/jekyll-theme-chirpy?style=flat-square)](https://github.com/cotes2020/jekyll-theme-chirpy/stargazers)

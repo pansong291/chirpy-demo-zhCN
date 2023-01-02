@@ -21,7 +21,7 @@ timezone: Asia/Shanghai
 
 title: Chirpy                          # the main title
 
-tagline: 以文本为中心的 Jekyll 主题   # it will display as the sub-title
+tagline: 专注于文本的 Jekyll 主题   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   一个简约的、响应式的、强大的 Jekyll 主题，用于呈现专业写作。
