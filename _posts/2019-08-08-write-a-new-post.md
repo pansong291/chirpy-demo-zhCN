@@ -72,12 +72,12 @@ authors: [<author1_id>, <author2_id>]   # 针对多个作者
 
 话虽如此， `author` 也可以识别多个条目。
 
-> 从 `_data/authors.yml`{: .filepath } 文件中读取作者信息的好处是页面将具有 `twitter:creator` 元标记，这丰富了 [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started#card-and-content-attribution) ，并且有利于SEO。
+> 从 `_data/authors.yml`{: .filepath } 文件中读取作者信息的好处是页面将具有 `twitter:creator` 元标记，这丰富了 [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started#card-and-content-attribution) ，并且有利于 SEO 。
 {: .prompt-info }
 
-## Table of Contents
+## 目录
 
-By default, the **T**able **o**f **C**ontents (TOC) is displayed on the right panel of the post. If you want to turn it off globally, go to `_config.yml`{: .filepath} and set the value of variable `toc` to `false`. If you want to turn off TOC for a specific post, add the following to the post's [Front Matter](https://jekyllrb.com/docs/front-matter/):
+默认情况下，目录 （TOC） 显示在帖子的右侧面板上。如果要全局关闭它，请在 `_config.yml`{: .filepath} 文件中将 `toc` 变量的值设置为 `false` 。如果要关闭特定帖子的目录，请将以下内容添加到帖子的 [前言](https://jekyllrb.com/docs/front-matter/) 内容中：
 
 ```yaml
 ---
@@ -85,11 +85,11 @@ toc: false
 ---
 ```
 
-## Comments
+## 评论
 
-The global switch of comments is defined by variable `comments.active` in the file `_config.yml`{: .filepath}. After selecting a comment system for this variable, comments will be turned on for all posts.
+评论的全局切换由 `_config.yml`{: .filepath} 文件中的 `comments.active` 变量定义。为此变量选择评论系统后，系统将为所有帖子启用评论。
 
-If you want to close the comment for a specific post, add the following to the **Front Matter** of the post:
+如果要关闭特定帖子的评论，请将以下内容添加到帖子的 **前言** 中：
 
 ```yaml
 ---
@@ -97,9 +97,9 @@ comments: false
 ---
 ```
 
-## Mathematics
+## 数学
 
-For website performance reasons, the mathematical feature won't be loaded by default. But it can be enabled by:
+出于网站性能原因，默认情况下不会加载数学功能。但它可以通过以下方式启用：
 
 ```yaml
 ---
@@ -109,7 +109,7 @@ math: true
 
 ## Mermaid
 
-[**Mermaid**](https://github.com/mermaid-js/mermaid) is a great diagrams generation tool. To enable it on your post, add the following to the YAML block:
+[**Mermaid**](https://github.com/mermaid-js/mermaid) 是一个很棒的图表生成工具。要在帖子中启用它，请将以下内容添加到 YAML 块：
 
 ```yaml
 ---
@@ -117,78 +117,78 @@ mermaid: true
 ---
 ```
 
-Then you can use it like other markdown languages: surround the graph code with ```` ```mermaid ```` and ```` ``` ````.
+然后你可以像其他 markdown 语言一样使用它：用 ```` ```mermaid ```` 和 ```` ``` ```` 包裹图形代码。
 
-## Images
+## 图片
 
-### Caption
+### 标题
 
-Add italics to the next line of an image，then it will become the caption and appear at the bottom of the image:
+将斜体添加到图片的下一行，然后它将成为标题并出现在图片的底部：
 
 ```markdown
-![img-description](/path/to/image)
-_Image Caption_
+![图片描述](/path/to/image)
+_图片标题_
 ```
 {: .nolineno}
 
-### Size
+### 大小
 
-In order to prevent the page content layout from shifting when the image is loaded, we should set the width and height for each image:
+为了防止页面内容布局在加载图片时移动，我们应该设置每个图片的宽度和高度：
 
 ```markdown
 ![Desktop View](/assets/img/sample/mockup.png){: width="700" height="400" }
 ```
 {: .nolineno}
 
-Starting from _Chirpy v5.0.0_, `height` and `width` support abbreviations (`height` → `h`, `width` → `w`). The following example has the same effect as the above:
+从 _Chirpy v5.0.0_ 开始，支持缩写（`height` → `h`， `width` → `w`）。以下示例具有与上述相同的效果：
 
 ```markdown
 ![Desktop View](/assets/img/sample/mockup.png){: w="700" h="400" }
 ```
 {: .nolineno}
 
-### Position
+### 位置
 
-By default, the image is centered, but you can specify the position by using one of the classes `normal`, `left`, and `right`.
+默认情况下，图片居中，但您可以使用 `normal` 、 `left` 和 `right` 类之中的一个指定位置。
 
-> Once the position is specified, the image caption should not be added.
+> 指定位置后，不应添加图片标题。
 {: .prompt-warning }
 
-- **Normal position**
+- **正常位置**
 
-  Image will be left aligned in below sample:
+  在下面的示例中图片将会左对齐：
 
   ```markdown
   ![Desktop View](/assets/img/sample/mockup.png){: .normal }
   ```
   {: .nolineno}
 
-- **Float to the left**
+- **向左浮动**
 
   ```markdown
   ![Desktop View](/assets/img/sample/mockup.png){: .left }
   ```
   {: .nolineno}
 
-- **Float to the right**
+- **向右浮动**
 
   ```markdown
   ![Desktop View](/assets/img/sample/mockup.png){: .right }
   ```
   {: .nolineno}
 
-### Dark/Light mode
+### 深色/浅色模式
 
-You can make images follow theme preferences in dark/light mode. This requires you to prepare two images, one for dark mode and one for light mode, and then assign them a specific class (`dark` or `light`):
+您可以使图片在深色/浅色模式下遵循主题首选项。这要求您准备两个图片，一个用于深色模式，一个用于浅色模式，然后为它们分配一个特定的类（ `dark` 或 `light` ）：
 
 ```markdown
 ![Light mode only](/path/to/light-mode.png){: .light }
 ![Dark mode only](/path/to/dark-mode.png){: .dark }
 ```
 
-### Shadow
+### 阴影
 
-The screenshots of the program window can be considered to show the shadow effect:
+程序窗口的屏幕截图可以考虑显示阴影效果：
 
 ```markdown
 ![Desktop View](/assets/img/sample/mockup.png){: .shadow }
@@ -197,32 +197,32 @@ The screenshots of the program window can be considered to show the shadow effec
 
 ### CDN URL
 
-If you host the images on the CDN, you can save the time of repeatedly writing the CDN URL by assigning the variable `img_cdn` of `_config.yml`{: .filepath} file:
+如果将图片托管在 CDN 上，可以通过指定 `_config.yml`{: .filepath} 文件中的 `img_cdn` 变量来节省重复编写 CDN URL 的时间：
 
 ```yaml
 img_cdn: https://cdn.com
 ```
 {: file='_config.yml' .nolineno}
 
-Once `img_cdn` is assigned, the CDN URL will be added to the path of all images (images of site avatar and posts) starting with `/`.
+指定 `img_cdn` 后，CDN URL 将被添加到以 `/` 开头的所有图片（网站头像和帖子的图片）的路径中。
 
-For instance, when using images:
+例如，使用图片时：
 
 ```markdown
 ![The flower](/path/to/flower.png)
 ```
 {: .nolineno}
 
-The parsing result will automatically add the CDN prefix `https://cdn.com` before the image path:
+解析结果会自动在图片路径前添加 `https://cdn.com` CDN 前缀：
 
 ```html
 <img src="https://cdn.com/path/to/flower.png" alt="The flower">
 ```
 {: .nolineno }
 
-### Image Path
+### 图片路径
 
-When a post contains many images, it will be a time-consuming task to repeatedly define the path of the images. To solve this, we can define this path in the YAML block of the post:
+当帖子包含许多图片时，重复定义图片的路径将是一项耗时的任务。为了解决这个问题，我们可以在帖子的 YAML 块中定义此路径：
 
 ```yml
 ---
@@ -230,25 +230,25 @@ img_path: /img/path/
 ---
 ```
 
-And then, the image source of Markdown can write the file name directly:
+然后，Markdown 的图片源可以直接写文件名：
 
 ```md
 ![The flower](flower.png)
 ```
 {: .nolineno }
 
-The output will be:
+输出将会是：
 
 ```html
 <img src="/img/path/flower.png" alt="The flower">
 ```
 {: .nolineno }
 
-### Preview Image
+### 预览图片
 
-If you want to add an image at the top of the article, please provide an image with a resolution of `1200 x 630`. Please note that if the image aspect ratio does not meet `1.91 : 1`, the image will be scaled and cropped.
+如果要在文章顶部添加图片，请提供分辨率为 `1200 x 630` 的图片。请注意，如果图片宽高比不符合 `1.91 : 1` ，图片将被缩放和裁剪。
 
-Knowing these prerequisites, you can start setting the image's attribute:
+了解这些先决条件后，您可以开始设置图片的属性：
 
 ```yaml
 ---
@@ -258,9 +258,9 @@ image:
 ---
 ```
 
-Note that the [`img_path`](#image-path) can also be passed to the preview image, that is, when it has been set, the  attribute `path` only needs the image file name.
+注意， [`img_path`](#图片路径) 也可以传递给预览图片，也就是说，在设置好后， `path` 属性只需要图片文件名。
 
-For simple use, you can also just use `image` to define the path.
+为了简单使用，您也可以只用 `image` 定义路径。
 
 ```yml
 ---
@@ -270,7 +270,7 @@ image: /path/to/image
 
 ### LQIP
 
-For preview images:
+对于预览图片：
 
 ```yaml
 ---
@@ -279,19 +279,19 @@ image:
 ---
 ```
 
-> You can observe LQIP in the preview image of post [_Text and Typography_](../text-and-typography/).
+> 您可以在帖子 [_文本和排版_](../text-and-typography/) 的预览图片中观察 LQIP。
 
 
-For normal images:
+对于普通图片：
 
 ```markdown
 ![Image description](/path/to/image){: lqip="/path/to/lqip-file" }
 ```
 {: .nolineno }
 
-## Pinned Posts
+## 置顶帖子
 
-You can pin one or more posts to the top of the home page, and the fixed posts are sorted in reverse order according to their release date. Enable by:
+您可以将一个或多个帖子置顶到首页，置顶的帖子会根据其发布日期以相反的顺序排序。启用方式：
 
 ```yaml
 ---
@@ -299,35 +299,35 @@ pin: true
 ---
 ```
 
-## Prompts
+## 提示
 
-There are several types of prompts: `tip`, `info`, `warning`, and `danger`. They can be generated by adding the class `prompt-{type}` to the blockquote. For example, define a prompt of type `info` as follows:
+有几种类型的提示： `tip` 、 `info` 、 `warning` 和 `danger` 。可以通过将 `prompt-{type}` 类添加到块引用来生成它们。例如，定义 `info` 类型的提示，如下所示：
 
 ```md
-> Example line for prompt.
+> 提示的使用演示。
 {: .prompt-info }
 ```
 {: .nolineno }
 
-## Syntax
+## 语法
 
-### Inline Code
+### 内联代码
 
 ```md
 `inline code part`
 ```
 {: .nolineno }
 
-### Filepath Hightlight
+### 高亮文件路径
 
 ```md
 `/path/to/a/file.extend`{: .filepath}
 ```
 {: .nolineno }
 
-### Code Block
+### 代码块
 
-Markdown symbols ```` ``` ```` can easily create a code block as follows:
+Markdown 的 ```` ``` ```` 符号可以轻松创建代码块，如下所示：
 
 ````md
 ```
@@ -335,9 +335,9 @@ This is a plaintext code snippet.
 ```
 ````
 
-#### Specifying Language
+#### 指定语言
 
-Using ```` ```{language} ```` you will get a code block with syntax highlight:
+使用 ```` ```{language} ```` 您将获得一个带有语法高亮的代码块：
 
 ````markdown
 ```yaml
@@ -345,12 +345,12 @@ key: value
 ```
 ````
 
-> The Jekyll tag `{% highlight %}` is not compatible with this theme.
+> Jekyll 标签 `{% highlight %}` 与此主题不兼容。
 {: .prompt-danger }
 
-#### Line Number
+#### 行号
 
-By default, all languages except `plaintext`, `console`, and `terminal` will display line numbers. When you want to hide the line number of a code block, add the class `nolineno` to it:
+默认情况下，除 `plaintext` 、 `console` 和 `terminal` 之外的所有语言都将显示行号。如果要隐藏代码块的行号，请将 `nolineno` 类添加到其中：
 
 ````markdown
 ```shell
@@ -359,9 +359,9 @@ echo 'No more line numbers!'
 {: .nolineno }
 ````
 
-#### Specifying the Filename
+#### 指定文件名
 
-You may have noticed that the code language will be displayed at the top of the code block. If you want to replace it with the file name, you can add the attribute `file` to achieve this:
+您可能已经注意到，代码语言将显示在代码块的顶部。如果要将其替换为文件名，可以添加 `file` 属性来实现此目的：
 
 ````markdown
 ```shell
@@ -370,9 +370,9 @@ You may have noticed that the code language will be displayed at the top of the 
 {: file="path/to/file" }
 ````
 
-#### Liquid Codes
+#### Liquid 代码
 
-If you want to display the **Liquid** snippet, surround the liquid code with `{% raw %}` and `{% endraw %}`:
+如果要显示 **Liquid** 代码片段，请在 liquid 代码两边加上 `{% raw %}` 和 `{% endraw %}` ：
 
 ````markdown
 {% raw %}
@@ -384,26 +384,26 @@ If you want to display the **Liquid** snippet, surround the liquid code with `{%
 {% endraw %}
 ````
 
-Or adding `render_with_liquid: false` (Requires Jekyll 4.0 or higher) to the post's YAML block.
+或添加 `render_with_liquid: false` （需要 Jekyll 4.0 或更高版本）到帖子的 YAML 块中。
 
-## Videos
+## 视频
 
-You can embed a video with the following syntax:
+您可以使用以下语法嵌入视频：
 
 ```liquid
 {% include embed/{Platform}.html id='{ID}' %}
 ```
-Where `Platform` is the lowercase of the platform name, and `ID` is the video ID.
+其中 `Platform` 是平台名称的小写， `ID` 是视频 ID。
 
-The following table shows how to get the two parameters we need in a given video URL, and you can also know the currently supported video platforms.
+下表显示了如何在给定的视频 URL 中获取我们需要的两个参数，您还可以了解当前支持的视频平台。
 
-| Video URL                                                                                          | Platform  | ID            |
+| 视频 URL                                                                                           | 平台       | ID            |
 |----------------------------------------------------------------------------------------------------|-----------|:--------------|
 | [https://www.**youtube**.com/watch?v=**H-B46URT4mg**](https://www.youtube.com/watch?v=H-B46URT4mg) | `youtube` | `H-B46URT4mg` |
 | [https://www.**twitch**.tv/videos/**1634779211**](https://www.twitch.tv/videos/1634779211)         | `twitch`  | `1634779211`  |
 
 
 
-## Learn More
+## 了解更多信息
 
-For more knowledge about Jekyll posts, visit the [Jekyll Docs: Posts](https://jekyllrb.com/docs/posts/).
+有关 Jekyll 帖子的更多信息，请访问 [Jekyll 文档：帖子](https://jekyllrb.com/docs/posts/) 。
