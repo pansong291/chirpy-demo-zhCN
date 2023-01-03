@@ -197,11 +197,15 @@ Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas int
 <http://127.0.0.1:4000>
 
 [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/)
+
+[新窗口打开](./){: target="_blank"}
 ```
 
 <http://127.0.0.1:4000>
 
 [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/)
+
+[新窗口打开](./){: target="_blank"}
 
 ## 脚注
 
