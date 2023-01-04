@@ -13,9 +13,9 @@ render_with_liquid: false
 
 创建一个名为 `YYYY-MM-DD-TITLE.EXTENSION`{: .filepath} 的新文件并将其放在根目录的 `_posts`{: .filepath} 中。请注意， `EXTENSION`{: .filepath} 必须是 `md`{: .filepath} 和 `markdown`{: .filepath} 之一。如果您想节省创建文件的时间，请考虑使用插件 [`Jekyll-Compose`](https://github.com/jekyll/jekyll-compose) 来完成此操作。
 
-## 前言
+## 头信息
 
-基本上，您需要在帖子顶部填写以下[前言](https://jekyllrb.com/docs/front-matter/)：
+基本上，您需要在帖子顶部填写以下[头信息](https://jekyllrb.com/docs/front-matter/)：
 
 ```yaml
 ---
@@ -26,12 +26,12 @@ tags: [TAG]     # TAG 名称应始终小写
 ---
 ```
 
-> 帖子的 _layout_ 已默认设置为 `post` ，因此无需在前言块中添加变量 _layout_。
+> 帖子的 _layout_ 已默认设置为 `post` ，因此无需在头信息块中添加变量 _layout_。
 {: .prompt-tip }
 
 ### 时区
 
-为了准确记录帖子的发布日期，您不仅应该设置 `_config.yml`{: .filepath} 的 `timezone` ，而且还应该在帖子前言块的变量中提供时区。格式： `+/-TTTT` ， 例如 `+0800`。
+为了准确记录帖子的发布日期，您不仅应该设置 `_config.yml`{: .filepath} 的 `timezone` ，而且还应该在帖子头信息块的变量中提供时区。格式： `+/-TTTT` ， 例如 `+0800`。
 
 ### 分类和标签
 
@@ -46,7 +46,7 @@ tags: [蜜蜂]
 
 ### 作者信息
 
-帖子的作者信息通常不需要在 _前言_ 中填写，默认情况下会从配置文件中 `social.name` 变量和 `social.links` 的第一个条目中获取。但您也可以按如下方式覆盖它：
+帖子的作者信息通常不需要在 _头信息_ 中填写，默认情况下会从配置文件中 `social.name` 变量和 `social.links` 的第一个条目中获取。但您也可以按如下方式覆盖它：
 
 在 `_data/authors.yml` 中添加作者信息（如果您的网站没有此文件，请立即创建一个）。
 
@@ -77,7 +77,7 @@ authors: [<author1_id>, <author2_id>]   # 针对多个作者
 
 ## 目录
 
-默认情况下，目录 （TOC） 显示在帖子的右侧面板上。如果要全局关闭它，请在 `_config.yml`{: .filepath} 文件中将 `toc` 变量的值设置为 `false` 。如果要关闭特定帖子的目录，请将以下内容添加到帖子的 [前言](https://jekyllrb.com/docs/front-matter/) 内容中：
+默认情况下，目录 （TOC） 显示在帖子的右侧面板上。如果要全局关闭它，请在 `_config.yml`{: .filepath} 文件中将 `toc` 变量的值设置为 `false` 。如果要关闭特定帖子的目录，请将以下内容添加到帖子的 [头信息](https://jekyllrb.com/docs/front-matter/) 内容中：
 
 ```yaml
 ---
@@ -89,7 +89,7 @@ toc: false
 
 评论的全局切换由 `_config.yml`{: .filepath} 文件中的 `comments.active` 变量定义。为此变量选择评论系统后，系统将为所有帖子启用评论。
 
-如果要关闭特定帖子的评论，请将以下内容添加到帖子的 **前言** 中：
+如果要关闭特定帖子的评论，请将以下内容添加到帖子的 **头信息** 中：
 
 ```yaml
 ---
