@@ -6,10 +6,6 @@ categories: [博客, 示例]
 tags: [排版]
 math: true
 mermaid: true
-image:
-path: /commons/devices-mockup.png
-lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-alt: Chirpy 主题的多设备响应式渲染。
 ---
 
 这篇文章是为了展示 [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/) 上的 Markdown 语法和对应的渲染效果，方便写作时作为参考。
@@ -69,7 +65,7 @@ Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas int
 `*这是斜体文本*` *这是斜体文本* <br>
 `_This is italic text_` _This is italic text_ <br>
 `~~Strikethrough 删除线~~` ~~Strikethrough 删除线~~ <br>
-使用 `<kbd> </kbd>` 显示按键 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd> <br>
+使用 `<kbd> </kbd>` 显示按键 <kbd>Ctrl</kbd> + <kbd>⇧ Shift</kbd> + <kbd>↵ Enter</kbd> <br>
 使用 `<b>` 可以实现 <b>加粗</b> 的效果 <br>
 使用 `<i>` 可以实现 <i>斜体</i> 的效果 <br>
 使用 `<em>` 表示 <em>强调</em> 的效果 <br>
@@ -201,9 +197,9 @@ Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas int
 [新窗口打开](./){: target="_blank"}
 ```
 
-<http://127.0.0.1:4000>
+<http://127.0.0.1:4000>{: target="_self"}
 
-[Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/)
+[Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/){: target="_self"}
 
 [新窗口打开](./){: target="_blank"}
 
